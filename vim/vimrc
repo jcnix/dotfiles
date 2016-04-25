@@ -9,6 +9,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'mxw/vim-jsx'
+Plugin 'rking/ag.vim'
 
 call vundle#end()
 filetype plugin indent on
