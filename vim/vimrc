@@ -10,6 +10,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'mxw/vim-jsx'
 Plugin 'rking/ag.vim'
+Plugin 'ctrlp.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -23,6 +24,11 @@ set softtabstop=4
 set expandtab
 set backspace=indent,eol,start
 
+let mapleader="\<Space>"
+nnoremap <Leader>o :CtrlP<CR>
+nnoremap <Leader>w :w<CR>
+
+set wildignore+=*/node_modules/*,*.so,*.swp,*.zip,*/tmp/*
 let g:syntastic_javascript_checkers = ['eslint']
 map <C-n> :NERDTreeToggle<CR> " Ctrl+n to open/close NERDTree
 
