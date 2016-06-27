@@ -4,22 +4,25 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'Syntastic'
-Plugin 'pangloss/vim-javascript'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'mxw/vim-jsx'
-Plugin 'rking/ag.vim'
-Plugin 'ctrlp.vim'
-Plugin 'terryma/vim-expand-region'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'vim-airline'
+Plugin 'Syntastic' "Syntax checker / linting
+Plugin 'pangloss/vim-javascript' "javascript syntax highlighting
+Plugin 'scrooloose/nerdtree' "file browser
+Plugin 'scrooloose/nerdcommenter' "tool for commenting code
+Plugin 'mxw/vim-jsx' "React/JSX syntax highlighting
+Plugin 'rking/ag.vim' "Access Ag from vim
+Plugin 'ctrlp.vim' "File searcher
+Plugin 'terryma/vim-expand-region' "easily expand visual mode selection
+Plugin 'Valloric/YouCompleteMe' "Code completion
+Plugin 'vim-airline' "Status/tab line plugin
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'tomasr/molokai' "color scheme
+Plugin 'jlanzarotta/bufexplorer' "Plugin for managing buffers
 
 call vundle#end()
 filetype plugin indent on
 
+colorscheme Molokai
 set showcmd
 set number
 syntax on
@@ -29,19 +32,42 @@ set softtabstop=4
 set expandtab
 set backspace=indent,eol,start
 set updatetime=250
-
-map q: :q
-
 let mapleader="\<Space>"
-nnoremap <Leader>o :CtrlP<CR>
-nnoremap <Leader>w :w<CR>
 
+set wildchar=<Tab> wildmenu wildmode=full "Tab completion for buffers/commands
+set wildcharm=<C-z>
+"Use gB to go to previous buffer
+nnoremap gB :bp<CR>
+"Use gb to go to next buffer
+nnoremap gb :bn<CR>
+"Open Buffer List with Space+c 
+nnoremap <Leader>c :b <C-z>
+"Open BufExplorer with Space+b
+nnoremap <Leader>b :BufExplorer<CR>
+map q: :q 
+
+"Open CtrlP with Space+o
+nnoremap <Leader>o :CtrlP<CR>
+"Save with Space+w
+nnoremap <Leader>w :w<CR>
+"Move to window below with C-j
+nnoremap <C-J> <C-W><C-J>
+"Move to window above with C-k
+nnoremap <C-K> <C-W><C-K>
+"Move to window right with C-l
+nnoremap <C-L> <C-W><C-L>
+"Move to window left with C-h
+nnoremap <C-H> <C-W><C-H>
+
+"use vim-expand-region with repeated presses of the v key in visual mode
 vmap v <Plug>(expand_region_expand)
+"shrink vim-expand-region with C-v
 vmap <C-v> <Plug>(expand_region_shrink)
 
 set wildignore+=*/node_modules/*,*.so,*.swp,*.zip,*/tmp/*
 let g:jsx_ext_required = 0
-map <C-n> :NERDTreeToggle<CR> " Ctrl+n to open/close NERDTree
+"C-n to open/close NERDTree
+map <C-n> :NERDTreeToggle<CR> 
 
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_check_on_open = 1
@@ -54,14 +80,13 @@ let g:airline_right_sep=''
 let g:airline_section_z=''
 let g:airline#extensions#tabline#enabled = 1
 
+let g:ctrlp_switch_buffer = 'Et'
 let g:ctrlp_use_caching = 0
-if executable('ag')
+if executable('ag') "Use Ag (the silver searcher) for CtrlP
     set grepprg=ag\ --nogroup\ --nocolor
 
     let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 else
     let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
-    let g:ctrlp_prompt_mappings = {
-                \ 'AcceptSelection("e")': ['<space>', '<cr>', '<2-LeftMouse>'],
-                \ }
 endif
+
