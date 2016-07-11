@@ -18,6 +18,10 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tomasr/molokai' "color scheme
 Plugin 'jlanzarotta/bufexplorer' "Plugin for managing buffers
+Plugin 'easymotion/vim-easymotion' "Plugin for simplifying motion commands
+Plugin 'haya14busa/incsearch.vim' "Incremental Search
+Plugin 'tpope/vim-surround' "for wrapping text
+Plugin 'Yggdroot/indentLine' "Indentation guides
 
 call vundle#end()
 filetype plugin indent on
@@ -32,6 +36,7 @@ set softtabstop=4
 set expandtab
 set backspace=indent,eol,start
 set updatetime=250
+set showbreak=└
 let mapleader="\<Space>"
 
 set wildchar=<Tab> wildmenu wildmode=full "Tab completion for buffers/commands
@@ -40,11 +45,20 @@ set wildcharm=<C-z>
 nnoremap gB :bp<CR>
 "Use gb to go to next buffer
 nnoremap gb :bn<CR>
-"Open Buffer List with Space+c 
-nnoremap <Leader>c :b <C-z>
+"Open Buffer List with Space+v 
+nnoremap <Leader>v :b <C-z>
 "Open BufExplorer with Space+b
 nnoremap <Leader>b :BufExplorer<CR>
 map q: :q 
+
+"Incremental Search mappings
+map / <Plug>(incsearch-forward)
+map ? <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
+set hlsearch
+let g:incsearch#auto_nohlsearch = 1
+map n <Plug>(incsearch-nohl-n)
+map N <Plug>(incsearch-nohl-N)
 
 "Open CtrlP with Space+o
 nnoremap <Leader>o :CtrlP<CR>
@@ -69,18 +83,19 @@ let g:jsx_ext_required = 0
 "C-n to open/close NERDTree
 map <C-n> :NERDTreeToggle<CR> 
 
+let g:indentLine_char = '│'
+
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-set laststatus=2
+set laststatus=2 "Keep status line visible
 let g:airline_theme='powerlineish'
 let g:airline_left_sep=''
 let g:airline_right_sep=''
 let g:airline_section_z=''
 let g:airline#extensions#tabline#enabled = 1
 
-let g:ctrlp_switch_buffer = 'Et'
 let g:ctrlp_use_caching = 0
 if executable('ag') "Use Ag (the silver searcher) for CtrlP
     set grepprg=ag\ --nogroup\ --nocolor
