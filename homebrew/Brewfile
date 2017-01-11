@@ -44,3 +44,4 @@ brew 'vim'
 brew 'wget'
 brew 'zsh'
 brew 'homebrew/dupes/openssh', args: ['with-libressl']
+brew 'thefuck'

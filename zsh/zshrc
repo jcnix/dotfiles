@@ -96,3 +96,4 @@ alias netorder2='sudo networksetup -ordernetworkservices "AX88179 USB 3.0 to Gig
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+eval "$(thefuck --alias)"
