@@ -53,7 +53,9 @@ nnoremap gb :bn<CR>
 nnoremap <Leader>v :b <C-z>
 "Open BufExplorer with Space+b
 nnoremap <Leader>b :BufExplorer<CR>
+
 map q: :q 
+"command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
 
 "Incremental Search mappings
 map / <Plug>(incsearch-forward)
@@ -64,10 +66,14 @@ let g:incsearch#auto_nohlsearch = 1
 map n <Plug>(incsearch-nohl-n)
 map N <Plug>(incsearch-nohl-N)
 
+"Easymotion mappings
+map <Leader>w <Plug>(easymotion-bd-w)
+map <Leader>L <Plug>(easymotion-bd-jk)
+
 "Open CtrlP with Space+o
 nnoremap <Leader>o :CtrlP<CR>
 "Save with Space+w
-nnoremap <Leader>w :w<CR>
+"nnoremap <Leader>w :w<CR>
 "Move to window below with C-j
 nnoremap <C-J> <C-W><C-J>
 "Move to window above with C-k
@@ -76,6 +82,9 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 "Move to window left with C-h
 nnoremap <C-H> <C-W><C-H>
+
+"Nerdcommenter
+nmap <Leader>/ <Plug>NERDCommenterToggle
 
 "use vim-expand-region with repeated presses of the v key in visual mode
 vmap v <Plug>(expand_region_expand)

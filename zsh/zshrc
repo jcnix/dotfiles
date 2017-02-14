@@ -91,9 +91,9 @@ export EDITOR=vim
 
 alias ldd="otool -L"
 
-alias netorder1='sudo networksetup -ordernetworkservices "Wi-Fi" "AX88179 USB 3.0 to Gigabit Ethernet" "Home VPN (L2TP)" "Apple USB Ethernet Adapter" "Bluetooth PAN" "Thunderbolt Bridge"'
-alias netorder2='sudo networksetup -ordernetworkservices "AX88179 USB 3.0 to Gigabit Ethernet" "Wi-Fi" "Home VPN (L2TP)" "Apple USB Ethernet Adapter" "Bluetooth PAN" "Thunderbolt Bridge"'
-alias listnetorder='networksetup -listnetworkserviceorder'
+alias netorder1='sudo networksetup -ordernetworkservices "Wi-Fi" "AX88179 USB 3.0 to Gigabit Ethernet" "Home VPN (L2TP)" "Apple USB Ethernet Adapter" "Bluetooth PAN" "Thunderbolt Bridge" "VPN2Boston" "VPN2Seattle"'
+alias netorder2='sudo networksetup -ordernetworkservices "AX88179 USB 3.0 to Gigabit Ethernet" "Wi-Fi" "Home VPN (L2TP)" "Apple USB Ethernet Adapter" "Bluetooth PAN" "Thunderbolt Bridge" "VPN2Boston" "VPN2Seattle"'
+alias netorderlist='networksetup -listnetworkserviceorder'
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
