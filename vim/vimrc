@@ -22,6 +22,7 @@ Plugin 'easymotion/vim-easymotion' "Plugin for simplifying motion commands
 Plugin 'haya14busa/incsearch.vim' "Incremental Search
 Plugin 'tpope/vim-surround' "for wrapping text
 Plugin 'Yggdroot/indentLine' "Indentation guides
+Plugin 'tpope/vim-fugitive' "Git integration
 
 call vundle#end()
 filetype plugin indent on
@@ -53,6 +54,7 @@ nnoremap gb :bn<CR>
 nnoremap <Leader>v :b <C-z>
 "Open BufExplorer with Space+b
 nnoremap <Leader>b :BufExplorer<CR>
+let g:bufExplorerShowRelativePath=1
 
 map q: :q 
 "command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
@@ -84,7 +86,7 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 "Nerdcommenter
-nmap <Leader>/ <Plug>NERDCommenterToggle
+map <Leader>/ <Plug>NERDCommenterToggle
 
 "use vim-expand-region with repeated presses of the v key in visual mode
 vmap v <Plug>(expand_region_expand)
@@ -110,6 +112,7 @@ let g:airline_left_sep=''
 let g:airline_right_sep=''
 let g:airline_section_z=''
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
 
 let g:ctrlp_use_caching = 0
 if executable('ag') "Use Ag (the silver searcher) for CtrlP

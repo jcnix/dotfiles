@@ -1,4 +1,5 @@
 "autocmd BufWritePre * :%s/\s\+$//e
 map cc :action CommentByLineComment<CR>
 map cm :action CommentByBlockComment<CR>
+set surround
 
