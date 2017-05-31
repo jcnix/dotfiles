@@ -23,11 +23,14 @@ Plugin 'haya14busa/incsearch.vim' "Incremental Search
 Plugin 'tpope/vim-surround' "for wrapping text
 Plugin 'Yggdroot/indentLine' "Indentation guides
 Plugin 'tpope/vim-fugitive' "Git integration
+Plugin 'qpkorr/vim-bufkill' "better buffer killing
+Plugin 'Xuyuanp/nerdtree-git-plugin' "Nerdtree Git plugin
 
 call vundle#end()
 filetype plugin indent on
 
 colorscheme Molokai
+set noswapfile
 set showcmd
 set number
 syntax on
@@ -36,6 +39,7 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 set backspace=indent,eol,start
+set conceallevel=0 "don't hide quotes in JSON
 set updatetime=250
 set showbreak=└
 let mapleader="\<Space>"
@@ -46,18 +50,20 @@ autocmd! GUIEnter * set vb t_vb=
 
 set wildchar=<Tab> wildmenu wildmode=full "Tab completion for buffers/commands
 set wildcharm=<C-z>
+"Replace vim buffer kill with bufkill
+nnoremap <Leader>bd :BD<CR>
 "Use gB to go to previous buffer
 nnoremap gB :bp<CR>
 "Use gb to go to next buffer
 nnoremap gb :bn<CR>
-"Open Buffer List with Space+v 
+"Open Buffer List with Space+v
 nnoremap <Leader>v :b <C-z>
 "Open BufExplorer with Space+b
 nnoremap <Leader>b :BufExplorer<CR>
 let g:bufExplorerShowRelativePath=1
 
-map q: :q 
-"command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
+map q: :q
+command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
 
 "Incremental Search mappings
 map / <Plug>(incsearch-forward)
@@ -88,6 +94,7 @@ nnoremap <C-H> <C-W><C-H>
 "Nerdcommenter
 map <Leader>/ <Plug>NERDCommenterToggle
 
+
 "use vim-expand-region with repeated presses of the v key in visual mode
 vmap v <Plug>(expand_region_expand)
 "shrink vim-expand-region with C-v
@@ -96,7 +103,7 @@ vmap <C-v> <Plug>(expand_region_shrink)
 set wildignore+=*/node_modules/*,*.so,*.swp,*.zip,*/tmp/*
 let g:jsx_ext_required = 0
 "C-n to open/close NERDTree
-map <C-n> :NERDTreeToggle<CR> 
+map <C-n> :NERDTreeToggle<CR>
 
 let g:indentLine_char = '│'
 
@@ -109,10 +116,13 @@ let g:syntastic_check_on_wq = 0
 set laststatus=2 "Keep status line visible
 let g:airline_theme='powerlineish'
 let g:airline_left_sep=''
+let g:airline_left_alt_sep='|'
 let g:airline_right_sep=''
-let g:airline_section_z=''
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
+
+let g:ag_working_path_mode='r'
+let g:ag_highlight=1
 
 let g:ctrlp_use_caching = 0
 if executable('ag') "Use Ag (the silver searcher) for CtrlP
