@@ -95,6 +95,11 @@ alias netorder1='sudo networksetup -ordernetworkservices "Wi-Fi" "AX88179 USB 3.
 alias netorder2='sudo networksetup -ordernetworkservices "AX88179 USB 3.0 to Gigabit Ethernet" "Wi-Fi" "Home VPN (L2TP)" "Apple USB Ethernet Adapter" "Bluetooth PAN" "Thunderbolt Bridge" "VPN2Boston" "VPN2Seattle"'
 alias netorderlist='networksetup -listnetworkserviceorder'
 
+alias mvnsbr='mvn spring-boot:run -DIafConfigSuffix=Local'
+
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 eval "$(thefuck --alias)"
+
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+

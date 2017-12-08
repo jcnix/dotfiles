@@ -1,6 +1,9 @@
 set nocompatible
 filetype off
 
+set exrc
+set secure
+
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
@@ -47,6 +50,8 @@ let mapleader="\<Space>"
 set noerrorbells
 set novisualbell
 autocmd! GUIEnter * set vb t_vb=
+
+autocmd filetype crontab setlocal nobackup nowritebackup
 
 set wildchar=<Tab> wildmenu wildmode=full "Tab completion for buffers/commands
 set wildcharm=<C-z>
