@@ -7,7 +7,7 @@ set secure
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'Syntastic' "Syntax checker / linting
+Plugin 'vim-syntastic/syntastic' "Syntax checker / linting
 Plugin 'pangloss/vim-javascript' "javascript syntax highlighting
 Plugin 'scrooloose/nerdtree' "file browser
 Plugin 'scrooloose/nerdcommenter' "tool for commenting code
@@ -68,7 +68,7 @@ nnoremap <Leader>b :BufExplorer<CR>
 let g:bufExplorerShowRelativePath=1
 
 map q: :q
-command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
+"command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
 
 "Incremental Search mappings
 map / <Plug>(incsearch-forward)
@@ -114,9 +114,16 @@ let g:indentLine_char = '│'
 
 let g:ycm_autoclose_preview_window_after_completion = 1
 
-let g:syntastic_javascript_checkers = ['eslint']
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_eslint_exe = '$(npm bin)/eslint'
 
 set laststatus=2 "Keep status line visible
 let g:airline_theme='powerlineish'
