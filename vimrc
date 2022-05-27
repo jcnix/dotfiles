@@ -51,6 +51,10 @@ nmap <leader>9 <Plug>AirlineSelectTab9
 nmap <leader>0 <Plug>AirlineSelectTab0
 nmap <leader>- <Plug>AirlineSelectPrevTab
 nmap <leader>+ <Plug>AirlineSelectNextTab
+nmap <silent> <Space>k :wincmd k<CR>
+nmap <silent> <Space>j :wincmd j<CR>
+nmap <silent> <Space>h :wincmd h<CR>
+nmap <silent> <Space>l :wincmd l<CR>
 
 " Coc.nvim use <tab> for trigger completion and navigate to the next complete item
 function! s:check_back_space() abort
