@@ -10,6 +10,7 @@
     ~/.vim/coc-settings.json: vim/coc-settings.json
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
+    ~/.work.zsh: work.zsh
     ~/.p10k.zsh: p10k.zsh
 
 - create:
