@@ -3,6 +3,8 @@ set nocompatible
 set cursorline
 set autoindent
 set wildmenu
+set noswapfile
+set updatetime=100
 filetype on
 filetype plugin on
 filetype indent on
@@ -17,9 +19,11 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-vinegar'
 Plug 'easymotion/vim-easymotion'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'airblade/vim-rooter'
+Plug 'airblade/vim-gitgutter'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'morhetz/gruvbox'
@@ -32,6 +36,9 @@ if has("gui_running")
 		set guifont=MesloLGS\ NF:h13
 	endif
 endif
+
+let g:netrw_liststyle = 3
+let g:netrw_altv = 1
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
@@ -51,10 +58,11 @@ nmap <leader>9 <Plug>AirlineSelectTab9
 nmap <leader>0 <Plug>AirlineSelectTab0
 nmap <leader>- <Plug>AirlineSelectPrevTab
 nmap <leader>+ <Plug>AirlineSelectNextTab
-nmap <silent> <Space>k :wincmd k<CR>
-nmap <silent> <Space>j :wincmd j<CR>
-nmap <silent> <Space>h :wincmd h<CR>
-nmap <silent> <Space>l :wincmd l<CR>
+nmap <silent> <Space>wk :wincmd k<CR>
+nmap <silent> <Space>wj :wincmd j<CR>
+nmap <silent> <Space>wh :wincmd h<CR>
+nmap <silent> <Space>wl :wincmd l<CR>
+nmap <silent> <F1> :FZF<CR>
 
 " Coc.nvim use <tab> for trigger completion and navigate to the next complete item
 function! s:check_back_space() abort
