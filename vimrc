@@ -63,11 +63,11 @@ inoremap <silent><expr> <Tab>
       \ <SID>check_back_space() ? "\<Tab>" :
       \ coc#refresh()
 
-" augroup numbertoggle
-" 	autocmd!
-" 	autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set rnu | endif
-" 	autocmd BufLeave,FocusLost,InsertEnter,WinLeave * if &nu | set nornu | endif
-" augroup END
+augroup numbertoggle
+	autocmd!
+	autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set rnu | endif
+	autocmd BufLeave,FocusLost,InsertEnter,WinLeave * if &nu | set nornu | endif
+augroup END
 
 if findfile("work.vimrc", "~/.vim") == "work.vimrc"
 	source ~/.vim/work.vimrc
