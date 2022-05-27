@@ -29,7 +29,7 @@ call plug#end()
 autocmd vimenter * ++nested colorscheme gruvbox
 if has("gui_running")
 	if has("gui_macvim")
-		set guifont=MesloLGS\ NF:h12
+		set guifont=MesloLGS\ NF:h13
 	endif
 endif
 
