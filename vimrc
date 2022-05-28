@@ -5,6 +5,8 @@ set autoindent
 set wildmenu
 set noswapfile
 set updatetime=100
+set mouse=a
+
 filetype on
 filetype plugin on
 filetype indent on
