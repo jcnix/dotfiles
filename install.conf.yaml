@@ -4,17 +4,19 @@
     
 - clean: ['~']
 
+- create:
+    - ~/.vim/autoload
+    - ~/.vim/after/ftplugin
+
 - link:
     ~/.dotfiles: ''
     ~/.vim/autoload/plug.vim: vim/autoload/plug.vim
     ~/.vim/coc-settings.json: vim/coc-settings.json
+    ~/.vim/after/ftplugin/netrw.vim: vim/netrw.vim
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
     ~/.work.zsh: work.zsh
     ~/.p10k.zsh: p10k.zsh
-
-- create:
-    - ~/.vim/autoload
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
