@@ -5,11 +5,13 @@
 - clean: ['~']
 
 - create:
+    - ~/.config
     - ~/.vim/autoload
     - ~/.vim/after/ftplugin
 
 - link:
     ~/.dotfiles: ''
+    ~/.config/nvim: nvim
     ~/.vim/autoload/plug.vim: vim/autoload/plug.vim
     ~/.vim/coc-settings.json: vim/coc-settings.json
     ~/.vim/after/ftplugin/netrw.vim: vim/netrw.vim
