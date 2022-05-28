@@ -63,6 +63,7 @@ nmap <silent> <Space>wj :wincmd j<CR>
 nmap <silent> <Space>wh :wincmd h<CR>
 nmap <silent> <Space>wl :wincmd l<CR>
 nmap <silent> <F1> :FZF<CR>
+nmap <silent> <F3> :Rg<CR>
 
 " Coc.nvim use <tab> for trigger completion and navigate to the next complete item
 function! s:check_back_space() abort
