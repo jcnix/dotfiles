@@ -17,7 +17,7 @@ end
 vim.cmd [[
   augroup packer_user_config
     autocmd!
-    autocmd BufWritePost _plugins.lua source <afile> | PackerSync
+    autocmd BufWritePost plugins.lua source <afile> | PackerSync
   augroup end
 ]]
 
@@ -41,6 +41,11 @@ return packer.startup(function(use)
 
 	use "tpope/vim-commentary"
 
+	use "editorconfig/editorconfig-vim"
+	use "easymotion/vim-easymotion"
+	use "airblade/vim-rooter"
+	use "airblade/vim-gitgutter"
+
 	--completion
 	use "hrsh7th/nvim-cmp"
 	use "hrsh7th/cmp-buffer"
@@ -55,7 +60,7 @@ return packer.startup(function(use)
 	use "williamboman/nvim-lsp-installer"
 
 	--colorschemes
-	use "morhetz/gruvbox"
+	use "ellisonleao/gruvbox.nvim"
 
 	if PACKER_BOOSTRAP then
 		require("packer").sync()

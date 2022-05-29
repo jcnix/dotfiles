@@ -13,4 +13,6 @@ vim.opt.undofile = true
 vim.opt.wrap = false
 vim.opt.scrolloff = 8
 vim.opt.termguicolors = true
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
 
