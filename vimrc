@@ -29,6 +29,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'morhetz/gruvbox'
+Plug 'ap/vim-css-color'
 
 call plug#end()
 
