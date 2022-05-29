@@ -12,4 +12,5 @@ vim.opt.splitright = true
 vim.opt.undofile = true
 vim.opt.wrap = false
 vim.opt.scrolloff = 8
+vim.opt.termguicolors = true
 
