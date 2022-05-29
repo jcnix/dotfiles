@@ -12,3 +12,8 @@ keymap("n", "<Space>wj", ":wincmd j", opts)
 keymap("n", "<Space>wh", ":wincmd h", opts)
 keymap("n", "<Space>wl", ":wincmd l", opts)
 
+keymap("n", "<F2>", ":Explore<CR>", opts)
+
+keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
+keymap("n", "<leader>g", "<cmd>Telescope live_grep<cr>", opts)
+

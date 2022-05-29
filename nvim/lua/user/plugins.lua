@@ -39,7 +39,11 @@ return packer.startup(function(use)
 	use "nvim-lua/popup.nvim"
 	use "nvim-lua/plenary.nvim"
 
+	--telescope
+	use "nvim-telescope/telescope.nvim"
+
 	use "tpope/vim-commentary"
+	use "tpope/vim-vinegar"
 
 	use "editorconfig/editorconfig-vim"
 	use "easymotion/vim-easymotion"
