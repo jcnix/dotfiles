@@ -17,7 +17,7 @@ end
 vim.cmd [[
   augroup packer_user_config
     autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerSync
+    autocmd BufWritePost _plugins.lua source <afile> | PackerSync
   augroup end
 ]]
 
@@ -39,15 +39,20 @@ return packer.startup(function(use)
 	use "nvim-lua/popup.nvim"
 	use "nvim-lua/plenary.nvim"
 
+	use "tpope/vim-commentary"
+
 	--completion
-	--use 'neovim/nvim-lspconfig'
-	--use 'hrsh7th/cmp-nvim-lsp'
 	use "hrsh7th/nvim-cmp"
 	use "hrsh7th/cmp-buffer"
 	use "hrsh7th/cmp-path"
 	use "hrsh7th/cmp-cmdline"
+	use "hrsh7th/cmp-nvim-lsp"
 	use "L3MON4D3/LuaSnip"
 	use "saadparwaiz1/cmp_luasnip"
+
+	--lsp
+	use "neovim/nvim-lspconfig"
+	use "williamboman/nvim-lsp-installer"
 
 	--colorschemes
 	use "morhetz/gruvbox"
