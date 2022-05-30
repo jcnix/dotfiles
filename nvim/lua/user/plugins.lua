@@ -50,7 +50,12 @@ return packer.startup(function(use)
 	use "airblade/vim-rooter"
 	use "airblade/vim-gitgutter"
 	use "windwp/nvim-autopairs"
+
+	--lualine
 	use "nvim-lualine/lualine.nvim"
+
+	--bufferline
+	use "akinsho/bufferline.nvim"
 
 	--completion
 	use "hrsh7th/nvim-cmp"
