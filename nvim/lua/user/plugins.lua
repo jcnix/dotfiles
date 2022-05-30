@@ -49,6 +49,8 @@ return packer.startup(function(use)
 	use "easymotion/vim-easymotion"
 	use "airblade/vim-rooter"
 	use "airblade/vim-gitgutter"
+	use "windwp/nvim-autopairs"
+	use "nvim-lualine/lualine.nvim"
 
 	--completion
 	use "hrsh7th/nvim-cmp"
