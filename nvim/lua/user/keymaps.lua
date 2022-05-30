@@ -7,10 +7,19 @@ local keymap = vim.api.nvim_set_keymap
 vim.g.mapleader = "\\"
 vim.g.maplocalleader = "\\"
 
-keymap("n", "<Space>wk", ":wincmd k", opts)
-keymap("n", "<Space>wj", ":wincmd j", opts)
-keymap("n", "<Space>wh", ":wincmd h", opts)
-keymap("n", "<Space>wl", ":wincmd l", opts)
+keymap("n", "<Space>wk", ":wincmd k<cr>", opts)
+keymap("n", "<Space>wj", ":wincmd j<cr>", opts)
+keymap("n", "<Space>wh", ":wincmd h<cr>", opts)
+keymap("n", "<Space>wl", ":wincmd l<cr>", opts)
+
+keymap("n", "<C-Up>", ":resize +2<cr>", opts)
+keymap("n", "<C-Down>", ":resize -2<cr>", opts)
+keymap("n", "<C-Left>", ":vertical resize -2<cr>", opts)
+keymap("n", "<C-Right>", ":vertical resize +2<cr>", opts)
+
+keymap("v", "<", "<gv", opts)
+keymap("v", ">", ">gv", opts)
+keymap("v", "p", '"_dP', opts)
 
 keymap("n", "<F2>", ":Explore<CR>", opts)
 
