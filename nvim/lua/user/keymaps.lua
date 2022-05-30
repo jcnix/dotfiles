@@ -4,13 +4,14 @@ local term_opts = { silent = true }
 
 local keymap = vim.api.nvim_set_keymap
 
-vim.g.mapleader = "\\"
-vim.g.maplocalleader = "\\"
+keymap("", "<Space>", "<Nop>", opts)
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
-keymap("n", "<Space>wk", ":wincmd k<cr>", opts)
-keymap("n", "<Space>wj", ":wincmd j<cr>", opts)
-keymap("n", "<Space>wh", ":wincmd h<cr>", opts)
-keymap("n", "<Space>wl", ":wincmd l<cr>", opts)
+keymap("n", "<leader>wk", ":wincmd k<cr>", opts)
+keymap("n", "<leader>wj", ":wincmd j<cr>", opts)
+keymap("n", "<leader>wh", ":wincmd h<cr>", opts)
+keymap("n", "<leader>wl", ":wincmd l<cr>", opts)
 
 keymap("n", "<C-Up>", ":resize +2<cr>", opts)
 keymap("n", "<C-Down>", ":resize -2<cr>", opts)
