@@ -8,6 +8,7 @@ require "user.treesitter"
 require "user.autopairs"
 require "user.lualine"
 require "user.bufferline"
+require "user.nvimtree"
 
 vim.cmd "colorscheme gruvbox"
 -- vim.cmd "set completeopt=menu,menuone,noselect"

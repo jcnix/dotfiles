@@ -70,6 +70,9 @@ return packer.startup(function(use)
 	use "neovim/nvim-lspconfig"
 	use "williamboman/nvim-lsp-installer"
 
+	use "kyazdani42/nvim-web-devicons"
+	use "kyazdani42/nvim-tree.lua"
+
 	--treesitter
 	use {
 		"nvim-treesitter/nvim-treesitter",
