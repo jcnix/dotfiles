@@ -10,6 +10,7 @@ require "user.lualine"
 require "user.bufferline"
 require "user.nvimtree"
 require "user.gitsigns"
+require "user.whichkey"
 
 vim.cmd "colorscheme gruvbox"
 -- vim.cmd "set completeopt=menu,menuone,noselect"

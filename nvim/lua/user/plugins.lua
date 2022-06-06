@@ -51,6 +51,7 @@ return packer.startup(function(use)
 	use "airblade/vim-rooter"
 	use "lewis6991/gitsigns.nvim"
 	use "windwp/nvim-autopairs"
+	use "folke/which-key.nvim"
 
 	--lualine
 	use "nvim-lualine/lualine.nvim"
