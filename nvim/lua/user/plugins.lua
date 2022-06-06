@@ -53,6 +53,7 @@ return packer.startup(function(use)
 	use "windwp/nvim-autopairs"
 	use "folke/which-key.nvim"
 	use "akinsho/toggleterm.nvim"
+	use "klen/nvim-test"
 
 	--lualine
 	use "nvim-lualine/lualine.nvim"
