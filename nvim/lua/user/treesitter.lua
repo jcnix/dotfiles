@@ -4,7 +4,7 @@ if not status_ok then
 end
 
 configs.setup {
-	ensure_installed = { "lua", "javascript", "typescript", "html", "css", "json", "scss", "yaml" },
+	ensure_installed = { "lua", "javascript", "typescript", "html", "css", "json", "scss", "yaml", "vim", "markdown", "bash" },
 	sync_install = false,
 	ignore_install = { "" },
 	highlight = {
