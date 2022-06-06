@@ -44,11 +44,12 @@ return packer.startup(function(use)
 
 	use "tpope/vim-commentary"
 	use "tpope/vim-vinegar"
+	use "tpope/vim-fugitive"
 
 	use "editorconfig/editorconfig-vim"
 	use "easymotion/vim-easymotion"
 	use "airblade/vim-rooter"
-	use "airblade/vim-gitgutter"
+	use "lewis6991/gitsigns.nvim"
 	use "windwp/nvim-autopairs"
 
 	--lualine
