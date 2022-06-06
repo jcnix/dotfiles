@@ -16,6 +16,8 @@ local lspconfig = require('lspconfig')
 
 lspconfig.tsserver.setup(opts)
 
+lspconfig.eslint.setup(opts)
+
 local sumneko_opts = require("user.lsp.settings.sumneko_lua")
 lspconfig.sumneko_lua.setup(vim.tbl_deep_extend("force", sumneko_opts, opts))
 

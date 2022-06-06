@@ -83,7 +83,7 @@ return packer.startup(function(use)
 	--colorschemes
 	use "ellisonleao/gruvbox.nvim"
 
-	if PACKER_BOOSTRAP then
+	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end
 end)
