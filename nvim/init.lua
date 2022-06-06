@@ -11,6 +11,7 @@ require "user.bufferline"
 require "user.nvimtree"
 require "user.gitsigns"
 require "user.whichkey"
+require "user.toggleterm"
 
 vim.cmd "colorscheme gruvbox"
 -- vim.cmd "set completeopt=menu,menuone,noselect"

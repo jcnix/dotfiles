@@ -52,6 +52,7 @@ return packer.startup(function(use)
 	use "lewis6991/gitsigns.nvim"
 	use "windwp/nvim-autopairs"
 	use "folke/which-key.nvim"
+	use "akinsho/toggleterm.nvim"
 
 	--lualine
 	use "nvim-lualine/lualine.nvim"
