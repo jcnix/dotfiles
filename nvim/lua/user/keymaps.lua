@@ -42,9 +42,10 @@ keymap("n", "<C-p>", "<cmd>Telescope commands<cr>", opts)
 keymap("n", "<leader>xx", "<cmd>TroubleToggle<cr>", opts)
 keymap("n", "<leader>xw", "<cmd>TroubleToggle workspace_diagnostics<cr>", opts)
 keymap("n", "<leader>xd", "<cmd>TroubleToggle document_diagnostics<cr>", opts)
-keymap("n", "gr", "<cmd>TroubleToggle lsp_references<cr>", opts)
+keymap("n", "<leader>xr", "<cmd>TroubleToggle lsp_references<cr>", opts)
 
-keymap("n", "<leader>bb", "<cmd>BufferLinePick<cr>", opts)
+keymap("n", "<leader>bb", "<cmd>Telescope buffers<cr>", opts)
+keymap("n", "<leader>bg", "<cmd>BufferLinePick<cr>", opts)
 keymap("n", "<leader>bd", "<cmd>bd<cr>", opts)
 keymap("n", "<leader>bD", "<cmd>bd!<cr>", opts)
 
