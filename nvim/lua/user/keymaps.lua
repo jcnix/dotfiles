@@ -46,4 +46,5 @@ keymap("n", "gr", "<cmd>TroubleToggle lsp_references<cr>", opts)
 
 keymap("n", "<leader>bb", "<cmd>BufferLinePick<cr>", opts)
 keymap("n", "<leader>bd", "<cmd>bd<cr>", opts)
+keymap("n", "<leader>bD", "<cmd>bd!<cr>", opts)
 
