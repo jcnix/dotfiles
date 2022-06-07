@@ -44,5 +44,6 @@ keymap("n", "<leader>xw", "<cmd>TroubleToggle workspace_diagnostics<cr>", opts)
 keymap("n", "<leader>xd", "<cmd>TroubleToggle document_diagnostics<cr>", opts)
 keymap("n", "gr", "<cmd>TroubleToggle lsp_references<cr>", opts)
 
-keymap("n", "gb", "<cmd>BufferLinePick<cr>", opts)
+keymap("n", "<leader>bb", "<cmd>BufferLinePick<cr>", opts)
+keymap("n", "<leader>bd", "<cmd>bd<cr>", opts)
 

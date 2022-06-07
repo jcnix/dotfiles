@@ -7,6 +7,9 @@ whichkey.setup {}
 
 whichkey.register({
 	["<leader>"] = {
+		b = {
+			name = "Buffer"
+		},
 		t = {
 			name = "Telescope"
 		},
