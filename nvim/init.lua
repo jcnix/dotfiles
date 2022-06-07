@@ -11,6 +11,7 @@ require "user.bufferline"
 require "user.nvimtree"
 require "user.gitsigns"
 require "user.whichkey"
+require "user.trouble"
 require "user.toggleterm"
 require "user.test"
 

@@ -23,5 +23,8 @@ whichkey.register({
 		w = {
 			name = "Window"
 		},
+		x = {
+			name = "Trouble"
+		},
 	}
 })

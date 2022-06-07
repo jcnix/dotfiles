@@ -31,12 +31,18 @@ keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 
 keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
 keymap("n", "<leader>g", "<cmd>Telescope live_grep<cr>", opts)
-keymap("n", "<leader>d", "<cmd>Telescope current_buffer_fuzzy_find<cr>", opts)
+keymap("n", "<leader>tg", "<cmd>Telescope current_buffer_fuzzy_find<cr>", opts)
 keymap("n", "<leader>ts", "<cmd>Telescope git_status<cr>", opts)
 keymap("n", "<leader>tc", "<cmd>Telescope git_bcommits<cr>", opts)
 keymap("n", "<leader>th", "<cmd>Telescope command_history<cr>", opts)
 keymap("n", "<leader>tm", "<cmd>Telescope keymaps<cr>", opts)
+keymap("n", "<leader>tp", "<cmd>Telescope commands<cr>", opts)
 keymap("n", "<C-p>", "<cmd>Telescope commands<cr>", opts)
+
+keymap("n", "<leader>xx", "<cmd>TroubleToggle<cr>", opts)
+keymap("n", "<leader>xw", "<cmd>TroubleToggle workspace_diagnostics<cr>", opts)
+keymap("n", "<leader>xd", "<cmd>TroubleToggle document_diagnostics<cr>", opts)
+keymap("n", "gr", "<cmd>TroubleToggle lsp_references<cr>", opts)
 
 keymap("n", "gb", "<cmd>BufferLinePick<cr>", opts)
 
