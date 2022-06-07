@@ -16,5 +16,6 @@ require "user.toggleterm"
 require "user.test"
 
 vim.cmd "colorscheme gruvbox"
+vim.cmd "set guifont=MesloLGS\\ NF:h13"
 -- vim.cmd "set completeopt=menu,menuone,noselect"
 
