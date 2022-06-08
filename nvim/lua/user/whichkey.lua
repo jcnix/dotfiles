@@ -29,6 +29,5 @@ whichkey.register({
 		x = {
 			name = "Trouble"
 		},
-	
 	}
 })
