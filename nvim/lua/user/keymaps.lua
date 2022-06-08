@@ -50,3 +50,8 @@ keymap("n", "<leader>bg", "<cmd>BufferLinePick<cr>", opts)
 keymap("n", "<leader>bd", "<cmd>bd<cr>", opts)
 keymap("n", "<leader>bD", "<cmd>bd!<cr>", opts)
 
+keymap('', '<D-v>', '+p<CR>', opts)
+keymap('!', '<D-v>', '<C-R>+', opts)
+keymap('t', '<D-v>', '<C-R>+', opts)
+keymap('v', '<D-v>', '<C-R>+', opts)
+keymap('v', '<D-c>', '"+y<cr>', opts)

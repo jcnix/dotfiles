@@ -19,3 +19,4 @@ vim.opt.shiftwidth = 4
 vim.g.netrw_liststyle = 3
 vim.g.netrw_altv =  1
 
+vim.g.neovide_input_use_logo = true
