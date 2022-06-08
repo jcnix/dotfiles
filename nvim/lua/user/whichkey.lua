@@ -14,7 +14,7 @@ whichkey.register({
 			name = "Telescope"
 		},
 		h = {
-			name = "Gitsigns",
+			name = "Git",
 			S = { "Stage buffer" },
 			R = { "Reset buffer" },
 			u = { "Undo stage hunk" },
@@ -29,5 +29,6 @@ whichkey.register({
 		x = {
 			name = "Trouble"
 		},
+	
 	}
 })
