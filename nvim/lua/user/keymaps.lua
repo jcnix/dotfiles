@@ -38,8 +38,8 @@ keymap("n", "<leader>fp", "<cmd>Telescope commands<cr>", opts)
 keymap('n', '<leader>fw', "<cmd>Telescope grep_string<cr>", opts)
 keymap("n", "<C-p>", "<cmd>Telescope commands<cr>", opts)
 
-keymap("n", "<leader>hg", "<cmd>Telescope git_status<cr>", opts)
-keymap("n", "<leader>hh", "<cmd>Telescope git_commits<cr>", opts)
+keymap("n", "<leader>hh", "<cmd>Telescope git_status<cr>", opts)
+keymap("n", "<leader>hg", "<cmd>Telescope git_commits<cr>", opts)
 keymap("n", "<leader>hl", "<cmd>Telescope git_bcommits<cr>", opts)
 keymap("n", "<leader>hc", "<cmd>Telescope git_branches<cr>", opts)
 

@@ -34,7 +34,7 @@ end
 local tree_cb = nvim_tree_config.nvim_tree_callback
 
 nvim_tree.setup {
-	disable_netrw = true,
+	disable_netrw = false,
 	hijack_netrw = true,
 	open_on_setup = false,
 	ignore_ft_on_setup = {
@@ -43,12 +43,8 @@ nvim_tree.setup {
 		"alpha",
 	},
 	open_on_tab = false,
-	hijack_cursor = false,
+	hijack_cursor = true,
 	update_cwd = true,
-	update_to_buf_dir = {
-		enable = true,
-		auto_open = true,
-	},
 	diagnostics = {
 		enable = true,
 		icons = {
