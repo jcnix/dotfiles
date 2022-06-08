@@ -55,6 +55,7 @@ return packer.startup(function(use)
 	use "folke/trouble.nvim"
 	use "akinsho/toggleterm.nvim"
 	use "klen/nvim-test"
+	use "goolord/alpha-nvim"
 
 	--lualine
 	use "nvim-lualine/lualine.nvim"

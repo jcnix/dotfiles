@@ -14,6 +14,7 @@ require "user.whichkey"
 require "user.trouble"
 require "user.toggleterm"
 require "user.test"
+require "user.alpha"
 
 vim.cmd "colorscheme gruvbox"
 vim.cmd "set guifont=MesloLGS\\ NF:h13"
