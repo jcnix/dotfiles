@@ -10,7 +10,7 @@ whichkey.register({
 		b = {
 			name = "Buffer"
 		},
-		t = {
+		f = {
 			name = "Telescope"
 		},
 		h = {
