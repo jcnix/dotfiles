@@ -15,6 +15,7 @@ vim.opt.scrolloff = 8
 vim.opt.termguicolors = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
+vim.opt.autoread = true
 
 vim.g.netrw_liststyle = 3
 vim.g.netrw_altv =  1
