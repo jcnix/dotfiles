@@ -17,6 +17,14 @@ configs.setup {
 		enable = true,
 		extened_mode = true,
 		max_file_lines = nil,
+		colors = {
+			"#d79921",
+			"#b16286",
+			"#a89984",
+			"#689d6a",
+			"#d65d0e",
+			"#458588",
+			"#cc241d",
+		},
 	}
 }
-
