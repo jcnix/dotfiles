@@ -45,10 +45,13 @@ return packer.startup(function(use)
 	use "tpope/vim-commentary"
 	use "tpope/vim-vinegar"
 	use "tpope/vim-fugitive"
+	use "tpope/vim-eunuch"
 
+	-- Vimscript
 	use "editorconfig/editorconfig-vim"
-	use "easymotion/vim-easymotion"
 	use "airblade/vim-rooter"
+
+	-- nvim lua
 	use "lewis6991/gitsigns.nvim"
 	use "windwp/nvim-autopairs"
 	use "folke/which-key.nvim"
@@ -56,6 +59,12 @@ return packer.startup(function(use)
 	use "akinsho/toggleterm.nvim"
 	use "klen/nvim-test"
 	use "goolord/alpha-nvim"
+	use {
+		"phaazon/hop.nvim",
+		config = function ()
+			require 'hop'.setup()
+		end
+	}
 
 	--lualine
 	use "nvim-lualine/lualine.nvim"
