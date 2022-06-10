@@ -42,14 +42,12 @@ return packer.startup(function(use)
 	--telescope
 	use "nvim-telescope/telescope.nvim"
 
-	use "tpope/vim-commentary"
-	use "tpope/vim-vinegar"
-	use "tpope/vim-fugitive"
-	use "tpope/vim-eunuch"
-
 	-- Vimscript
 	use "editorconfig/editorconfig-vim"
 	use "airblade/vim-rooter"
+	use "tpope/vim-commentary"
+	use "tpope/vim-fugitive"
+	use "tpope/vim-eunuch"
 
 	-- nvim lua
 	use "lewis6991/gitsigns.nvim"
