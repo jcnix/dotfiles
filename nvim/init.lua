@@ -16,7 +16,7 @@ require "user.toggleterm"
 require "user.test"
 require "user.alpha"
 
-vim.cmd "colorscheme gruvbox"
+vim.cmd "colorscheme vscode"
 vim.cmd "set guifont=MesloLGS\\ NF:h13"
 -- vim.cmd "set completeopt=menu,menuone,noselect"
 

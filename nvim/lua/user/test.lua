@@ -6,7 +6,7 @@ end
 test.setup {
 	term = "toggleterm",
 	termOpts = {
-		direction = "float",
+		direction = "horizontal",
 	},
 }
 

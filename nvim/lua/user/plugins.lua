@@ -88,6 +88,7 @@ return packer.startup(function(use)
 
 	--colorschemes
 	use "ellisonleao/gruvbox.nvim"
+	use "Mofiqul/vscode.nvim"
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
