@@ -57,6 +57,7 @@ return packer.startup(function(use)
 	use "akinsho/toggleterm.nvim"
 	use "klen/nvim-test"
 	use "goolord/alpha-nvim"
+	use "norcalli/nvim-colorizer.lua"
 	use {
 		"phaazon/hop.nvim",
 		config = function ()
