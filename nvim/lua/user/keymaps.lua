@@ -56,8 +56,8 @@ keymap("n", "<leader>xr", "<cmd>TroubleToggle lsp_references<cr>", opts)
 -- Buffers
 keymap("n", "<leader>bb", "<cmd>Telescope buffers<cr>", opts)
 keymap("n", "<leader>bg", "<cmd>BufferLinePick<cr>", opts)
-keymap("n", "<leader>bd", "<cmd>bd<cr>", opts)
-keymap("n", "<leader>bD", "<cmd>bd!<cr>", opts)
+keymap("n", "<leader>bd", "<cmd>Bdelete<cr>", opts)
+keymap("n", "<leader>bD", "<cmd>Bdelete!<cr>", opts)
 
 -- Copy and Paste Clipboard
 keymap('', '<D-v>', '+p<CR>', opts)

@@ -59,6 +59,7 @@ return packer.startup(function(use)
 	use "goolord/alpha-nvim"
 	use "norcalli/nvim-colorizer.lua"
 	use "ruifm/gitlinker.nvim"
+	use "famiu/bufdelete.nvim"
 	use {
 		"phaazon/hop.nvim",
 		config = function ()
