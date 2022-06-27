@@ -6,5 +6,6 @@ end
 gitlinker.setup {
 	callbacks = {
 		["github.deere.com"] = require("gitlinker.hosts").get_github_type_url
-	}
+	},
+	mappings = nil,
 }

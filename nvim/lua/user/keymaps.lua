@@ -46,6 +46,8 @@ keymap("n", "<leader>hh", "<cmd>Telescope git_status<cr>", opts)
 keymap("n", "<leader>hg", "<cmd>Telescope git_commits<cr>", opts)
 keymap("n", "<leader>hl", "<cmd>Telescope git_bcommits<cr>", opts)
 keymap("n", "<leader>hc", "<cmd>Telescope git_branches<cr>", opts)
+keymap("n", "<leader>hy", "<cmd> lua require'gitlinker'.get_buf_range_url(n)<cr>", opts)
+keymap("v", "<leader>hy", "<cmd> lua require'gitlinker'.get_buf_range_url(v)<cr>", opts)
 
 --Trouble
 keymap("n", "<leader>xx", "<cmd>TroubleToggle<cr>", opts)
