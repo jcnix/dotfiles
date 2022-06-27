@@ -40,6 +40,14 @@ local schemas = {
 		},
 		url = "https://json.schemastore.org/package.json",
 	},
+	{
+		description = "Renovate configuration file",
+		filematch = {
+			"renovate.json",
+			".whitesource"
+		},
+		url = "https://json.schemastore.org/renovate-schema.json"
+	}
 }
 
 local opts = {
