@@ -23,4 +23,4 @@ lspconfig.sumneko_lua.setup(vim.tbl_deep_extend("force", sumneko_opts, opts))
 
 local jsonls_opts = require("user.lsp.settings.jsonls")
 lspconfig.jsonls.setup(vim.tbl_deep_extend("force", jsonls_opts, opts))
-
+lspconfig.yamlls.setup(vim.tbl_deep_extend("force", jsonls_opts, opts))
