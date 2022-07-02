@@ -52,7 +52,6 @@ local schemas = {
 		description = "Cloudformation file",
 		filematch = {
 			"*.cfn.json",
-			"*.cfn.yaml"
 		},
 		url = "https://raw.githubusercontent.com/awslabs/goformation/master/schema/cloudformation.schema.json"
 	}
@@ -62,7 +61,7 @@ local opts = {
 	settings = {
 		json = {
 			schemas = schemas,
-		}
+		},
 	},
 	setup = {
 		commands = {
