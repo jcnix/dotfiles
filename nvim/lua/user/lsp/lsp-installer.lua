@@ -25,3 +25,6 @@ local jsonls_opts = require("user.lsp.settings.jsonls")
 local yamlls_opts = require("user.lsp.settings.yamlls")
 lspconfig.jsonls.setup(vim.tbl_deep_extend("force", jsonls_opts, opts))
 lspconfig.yamlls.setup(vim.tbl_deep_extend("force", yamlls_opts, opts))
+
+lspconfig.cssls.setup(opts)
+lspconfig.cssmodules_ls.setup(opts)
