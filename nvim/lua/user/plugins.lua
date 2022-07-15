@@ -66,6 +66,14 @@ return packer.startup(function(use)
 			require 'hop'.setup()
 		end
 	}
+	use({
+	    "kylechui/nvim-surround",
+	    config = function()
+	        require("nvim-surround").setup({
+            -- Configuration here, or leave empty to use defaults
+        })
+		end
+	})
 
 	--lualine
 	use "nvim-lualine/lualine.nvim"
