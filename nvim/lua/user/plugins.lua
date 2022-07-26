@@ -46,7 +46,6 @@ return packer.startup(function(use)
 	use "editorconfig/editorconfig-vim"
 	use "airblade/vim-rooter"
 	use "tpope/vim-commentary"
-	use "tpope/vim-fugitive"
 	use "tpope/vim-eunuch"
 
 	-- nvim lua
@@ -60,6 +59,7 @@ return packer.startup(function(use)
 	use "norcalli/nvim-colorizer.lua"
 	use "ruifm/gitlinker.nvim"
 	use "famiu/bufdelete.nvim"
+	use "TimUntersberger/neogit"
 	use {
 		"phaazon/hop.nvim",
 		config = function ()
@@ -69,9 +69,7 @@ return packer.startup(function(use)
 	use({
 	    "kylechui/nvim-surround",
 	    config = function()
-	        require("nvim-surround").setup({
-            -- Configuration here, or leave empty to use defaults
-        })
+	        require("nvim-surround").setup({})
 		end
 	})
 

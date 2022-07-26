@@ -17,6 +17,7 @@ require "user.test"
 require "user.alpha"
 require "user.colorizer"
 require "user.gitlinker"
+require "user.neogit"
 
 vim.cmd "colorscheme vscode"
 vim.cmd "set guifont=MesloLGS\\ NF:h13"

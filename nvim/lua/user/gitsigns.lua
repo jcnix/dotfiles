@@ -4,6 +4,13 @@ if not status_ok then
 end
 
 gitsigns.setup {
+	current_line_blame = true,
+	current_line_blame_opts = {
+		virt_text = true,
+		virt_text_pos = 'right_align',
+		delay = 0,
+		ignore_whitespace = false,
+	},
 	on_attach = function(bufnr)
 		local gs = package.loaded.gitsigns
 
@@ -34,7 +41,7 @@ gitsigns.setup {
 		map('n', '<leader>hR', gs.reset_buffer)
 		map('n', '<leader>hp', gs.preview_hunk)
 		map('n', '<leader>hb', function() gs.blame_line{full=true} end)
-		-- map('n', '<leader>tb', gs.toggle_current_line_blame)
+		map('n', '<leader>hB', gs.toggle_current_line_blame)
 		map('n', '<leader>hd', gs.diffthis)
 		map('n', '<leader>hD', function() gs.diffthis('~') end)
 		-- map('n', '<leader>td', gs.toggle_deleted)

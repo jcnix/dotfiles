@@ -22,6 +22,7 @@ whichkey.register({
 			d = { "Diff this" },
 			D = { "Diff this ~" },
 			b = { "Blame line" },
+			B = { "Toggle blame line" },
 		},
 		w = {
 			name = "Window"
