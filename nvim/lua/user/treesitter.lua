@@ -15,7 +15,8 @@ configs.setup {
 	indent = { enable = true, disable = { "yaml" } },
 	rainbow = {
 		enable = true,
-		extened_mode = true,
+		-- disable = { "jsx", "tsx" },
+		extended_mode = false,
 		max_file_lines = nil,
 		colors = {
 			"#d79921",
