@@ -9,10 +9,6 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 -- Window commands
-keymap("n", "<leader>wk", ":wincmd k<cr>", opts)
-keymap("n", "<leader>wj", ":wincmd j<cr>", opts)
-keymap("n", "<leader>wh", ":wincmd h<cr>", opts)
-keymap("n", "<leader>wl", ":wincmd l<cr>", opts)
 keymap("n", "<C-k>", ":wincmd k<cr>", opts)
 keymap("n", "<C-j>", ":wincmd j<cr>", opts)
 keymap("n", "<C-h>", ":wincmd h<cr>", opts)
@@ -29,37 +25,37 @@ keymap("v", "p", '"_dP', opts)
 
 -- Nvimtree
 keymap("n", "<F2>", ":NvimTreeToggle<CR>", opts)
-keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
+-- keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 
 -- Telescope
-keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts)
-keymap("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", opts)
-keymap("n", "<leader>fb", "<cmd>Telescope current_buffer_fuzzy_find<cr>", opts)
-keymap("n", "<leader>fh", "<cmd>Telescope command_history<cr>", opts)
-keymap("n", "<leader>fm", "<cmd>Telescope keymaps<cr>", opts)
-keymap("n", "<leader>fp", "<cmd>Telescope commands<cr>", opts)
-keymap('n', '<leader>fw', "<cmd>Telescope grep_string<cr>", opts)
+-- keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts)
+-- keymap("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", opts)
+-- keymap("n", "<leader>fb", "<cmd>Telescope current_buffer_fuzzy_find<cr>", opts)
+-- keymap("n", "<leader>fh", "<cmd>Telescope command_history<cr>", opts)
+-- keymap("n", "<leader>fm", "<cmd>Telescope keymaps<cr>", opts)
+-- keymap("n", "<leader>fp", "<cmd>Telescope commands<cr>", opts)
+-- keymap('n', '<leader>fw', "<cmd>Telescope grep_string<cr>", opts)
 keymap("n", "<C-p>", "<cmd>Telescope commands<cr>", opts)
 
 -- Gitsigns
-keymap("n", "<leader>hh", "<cmd>Telescope git_status<cr>", opts)
-keymap("n", "<leader>hg", "<cmd>Telescope git_commits<cr>", opts)
-keymap("n", "<leader>hl", "<cmd>Telescope git_bcommits<cr>", opts)
-keymap("n", "<leader>hc", "<cmd>Telescope git_branches<cr>", opts)
-keymap("n", "<leader>hy", "<cmd> lua require'gitlinker'.get_buf_range_url(n)<cr>", opts)
+-- keymap("n", "<leader>hh", "<cmd>Telescope git_status<cr>", opts)
+-- keymap("n", "<leader>hg", "<cmd>Telescope git_commits<cr>", opts)
+-- keymap("n", "<leader>hl", "<cmd>Telescope git_bcommits<cr>", opts)
+-- keymap("n", "<leader>hc", "<cmd>Telescope git_branches<cr>", opts)
+-- keymap("n", "<leader>hy", "<cmd> lua require'gitlinker'.get_buf_range_url(n)<cr>", opts)
 keymap("v", "<leader>hy", "<cmd> lua require'gitlinker'.get_buf_range_url(v)<cr>", opts)
 
 --Trouble
-keymap("n", "<leader>xx", "<cmd>TroubleToggle<cr>", opts)
-keymap("n", "<leader>xw", "<cmd>TroubleToggle workspace_diagnostics<cr>", opts)
-keymap("n", "<leader>xd", "<cmd>TroubleToggle document_diagnostics<cr>", opts)
-keymap("n", "<leader>xr", "<cmd>TroubleToggle lsp_references<cr>", opts)
+-- keymap("n", "<leader>xx", "<cmd>TroubleToggle<cr>", opts)
+-- keymap("n", "<leader>xw", "<cmd>TroubleToggle workspace_diagnostics<cr>", opts)
+-- keymap("n", "<leader>xd", "<cmd>TroubleToggle document_diagnostics<cr>", opts)
+-- keymap("n", "<leader>xr", "<cmd>TroubleToggle lsp_references<cr>", opts)
 
 -- Buffers
-keymap("n", "<leader>bb", "<cmd>Telescope buffers<cr>", opts)
-keymap("n", "<leader>bg", "<cmd>BufferLinePick<cr>", opts)
-keymap("n", "<leader>bd", "<cmd>Bdelete<cr>", opts)
-keymap("n", "<leader>bD", "<cmd>Bdelete!<cr>", opts)
+-- keymap("n", "<leader>bb", "<cmd>Telescope buffers<cr>", opts)
+-- keymap("n", "<leader>bg", "<cmd>BufferLinePick<cr>", opts)
+-- keymap("n", "<leader>bd", "<cmd>Bdelete<cr>", opts)
+-- keymap("n", "<leader>bD", "<cmd>Bdelete!<cr>", opts)
 
 -- Copy and Paste Clipboard
 keymap('', '<D-v>', '+p<CR>', opts)
@@ -71,8 +67,8 @@ keymap('v', '<D-c>', '"+y', opts)
 keymap('v', '<leader>Y', '"+y', opts)
 
 -- hop.nvim
-keymap("", "<leader><leader>w", "<cmd>HopWord<CR>", opts)
-keymap("", "<leader><leader>j", "<cmd>HopLineAC<CR>", opts)
-keymap("", "<leader><leader>k", "<cmd>HopLineBC<CR>", opts)
-keymap("", "<leader><leader>f", "<cmd>HopChar1<CR>", opts)
+-- keymap("", "<leader><leader>w", "<cmd>HopWord<CR>", opts)
+-- keymap("", "<leader><leader>j", "<cmd>HopLineAC<CR>", opts)
+-- keymap("", "<leader><leader>k", "<cmd>HopLineBC<CR>", opts)
+-- keymap("", "<leader><leader>f", "<cmd>HopChar1<CR>", opts)
 
