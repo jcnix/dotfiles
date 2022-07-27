@@ -45,7 +45,6 @@ return packer.startup(function(use)
 	-- Vimscript
 	use "editorconfig/editorconfig-vim"
 	use "airblade/vim-rooter"
-	use "tpope/vim-commentary"
 	use "tpope/vim-eunuch"
 
 	-- nvim lua
@@ -59,6 +58,12 @@ return packer.startup(function(use)
 	use "ruifm/gitlinker.nvim"
 	use "famiu/bufdelete.nvim"
 	use "TimUntersberger/neogit"
+	use {
+		"numToStr/Comment.nvim",
+		config = function ()
+			require('Comment').setup()
+		end
+	}
 	use {
 		"phaazon/hop.nvim",
 		config = function ()
