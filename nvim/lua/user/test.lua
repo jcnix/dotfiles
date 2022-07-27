@@ -1,16 +1,19 @@
-local status_ok, test = pcall(require, "nvim-test")
+local status_ok, test = pcall(require, "neotest")
 if not status_ok then
 	return
 end
 
-test.setup {
-	term = "toggleterm",
-	termOpts = {
-		direction = "horizontal",
-	},
-}
+local jest_status_ok, jest = pcall(require, "neotest-jest")
+if not jest_status_ok then
+	return
+end
 
-require('nvim-test.runners.jest'):setup {
-	args = { "--config=jest.config.unit.js", "--no-coverage" }
+test.setup {
+	adapters = {
+		jest {
+			jestCommand = "npm test --",
+			-- jestConfigFile = "jest.config.unit.js",
+		}
+	}
 }
 

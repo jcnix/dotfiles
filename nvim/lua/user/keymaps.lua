@@ -75,3 +75,4 @@ keymap("", "<leader><leader>w", "<cmd>HopWord<CR>", opts)
 keymap("", "<leader><leader>j", "<cmd>HopLineAC<CR>", opts)
 keymap("", "<leader><leader>k", "<cmd>HopLineBC<CR>", opts)
 keymap("", "<leader><leader>f", "<cmd>HopChar1<CR>", opts)
+

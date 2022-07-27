@@ -54,7 +54,6 @@ return packer.startup(function(use)
 	use "folke/which-key.nvim"
 	use "folke/trouble.nvim"
 	use "akinsho/toggleterm.nvim"
-	use "klen/nvim-test"
 	use "goolord/alpha-nvim"
 	use "norcalli/nvim-colorizer.lua"
 	use "ruifm/gitlinker.nvim"
@@ -72,6 +71,13 @@ return packer.startup(function(use)
 	        require("nvim-surround").setup({})
 		end
 	})
+	use {
+		"nvim-neotest/neotest",
+		requires = {
+			"haydenmeade/neotest-jest",
+			"antoinemadec/FixCursorHold.nvim"
+		}
+	}
 
 	--lualine
 	use "nvim-lualine/lualine.nvim"
