@@ -78,6 +78,12 @@ return packer.startup(function(use)
 			"antoinemadec/FixCursorHold.nvim"
 		}
 	}
+	use {
+		"kevinhwang91/nvim-ufo",
+		requires = {
+			"kevinhwang91/promise-async"
+		}
+	}
 
 	--lualine
 	use "nvim-lualine/lualine.nvim"

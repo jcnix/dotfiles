@@ -63,6 +63,7 @@ whichkey.register({
 			d = { "<cmd>TroubleToggle document_diagnostics<cr>", "Document Diagnostics" },
 			r = { "<cmd>TroubleToggle lsp_references<cr>", "LSP References" },
 		},
+		U = { function() require'ufo'.peekFoldedLinesUnderCursor() end, "Preview Fold" },
 		["<leader>"] = {
 			name = "hop",
 			w = { "<cmd>HopWord<cr>", "Word" },
