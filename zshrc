@@ -2,6 +2,7 @@ source ~/.dotfiles/antigen/antigen.zsh
 
 antigen use oh-my-zsh
 antigen bundle git
+antigen bundle toolbox
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 antigen theme romkatv/powerlevel10k
