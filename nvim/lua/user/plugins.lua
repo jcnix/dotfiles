@@ -74,7 +74,7 @@ return packer.startup(function(use)
 	use({
 	    "kylechui/nvim-surround",
 	    config = function()
-	        require("nvim-surround").setup({})
+	        require("nvim-surround").setup()
 		end
 	})
 	use {
@@ -107,8 +107,11 @@ return packer.startup(function(use)
 	use "saadparwaiz1/cmp_luasnip"
 
 	--lsp
-	use "neovim/nvim-lspconfig"
-	use "williamboman/nvim-lsp-installer"
+	use {
+	    "williamboman/mason.nvim",
+	    "williamboman/mason-lspconfig.nvim",
+	    "neovim/nvim-lspconfig",
+	}
 	use "RRethy/vim-illuminate"
 
 	use "kyazdani42/nvim-web-devicons"
