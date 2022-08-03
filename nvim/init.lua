@@ -1,3 +1,6 @@
+vim.cmd "colorscheme vscode"
+vim.cmd "set guifont=MesloLGS\\ NF:h13"
+
 require "user.options"
 require "user.keymaps"
 require "user.plugins"
@@ -19,8 +22,7 @@ require "user.colorizer"
 require "user.gitlinker"
 require "user.neogit"
 require "user.ufo"
+require "user.blankline"
 
-vim.cmd "colorscheme vscode"
-vim.cmd "set guifont=MesloLGS\\ NF:h13"
 -- vim.cmd "set completeopt=menu,menuone,noselect"
 

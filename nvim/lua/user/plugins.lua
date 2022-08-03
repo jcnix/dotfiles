@@ -58,6 +58,7 @@ return packer.startup(function(use)
 	use "ruifm/gitlinker.nvim"
 	use "famiu/bufdelete.nvim"
 	use "TimUntersberger/neogit"
+	use "lukas-reineke/indent-blankline.nvim"
 	use {
 		"numToStr/Comment.nvim",
 		config = function ()
