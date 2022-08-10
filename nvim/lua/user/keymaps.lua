@@ -41,3 +41,5 @@ keymap('v', '<D-v>', '<C-R>+', opts)
 keymap('v', '<D-c>', '"+y', opts)
 keymap('v', '<leader>Y', '"+y', opts)
 
+keymap('n', '<s-l>', ':BufferLineCycleNext<CR>', opts)
+keymap('n', '<s-h>', ':BufferLineCyclePrev<CR>', opts)

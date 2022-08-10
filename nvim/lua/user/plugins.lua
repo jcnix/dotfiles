@@ -54,7 +54,7 @@ return packer.startup(function(use)
 	use "folke/trouble.nvim"
 	use "akinsho/toggleterm.nvim"
 	use "goolord/alpha-nvim"
-	use "norcalli/nvim-colorizer.lua"
+	use "NvChad/nvim-colorizer.lua"
 	use "ruifm/gitlinker.nvim"
 	use "famiu/bufdelete.nvim"
 	use "TimUntersberger/neogit"
@@ -127,6 +127,8 @@ return packer.startup(function(use)
 	--colorschemes
 	use "ellisonleao/gruvbox.nvim"
 	use "Mofiqul/vscode.nvim"
+	use "rafamadriz/neon"
+	use "folke/tokyonight.nvim"
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()

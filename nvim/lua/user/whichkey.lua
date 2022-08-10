@@ -47,12 +47,7 @@ whichkey.register({
 			l = { function() require 'neotest'.run.run_last() end, "Run Last Test" },
 			f = { function() require 'neotest'.run.run(vim.fn.expand('%')) end, "Run Test File" },
 			s = { function() require 'neotest'.summary.toggle() end, "Test Summary" },
-			o = { function() require 'neotest'.output.open({
-					open_win = function(opts)
-					    vim.cmd("split")
-						return vim.api.nvim_get_current_win()
-					end,
-					enter = true })
+			o = { function() require 'neotest'.output.open({ enter = true })
 			end, "Open Test Output" },
 		},
 		w = {
