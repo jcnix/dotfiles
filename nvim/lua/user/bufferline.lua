@@ -72,4 +72,40 @@ bufferline.setup {
 		--   return buffer_a.modified > buffer_b.modified
 		-- end
 	},
+	highlights = {
+		fill = {
+			fg = { attribute = "fg", highlight = "Normal" },
+			bg = { attribute = "bg", highlight = "StatusLineNC" },
+		},
+		background = {
+			fg = { attribute = "fg", highlight = "Normal" },
+			bg = { attribute = "bg", highlight = "StatusLine" },
+		},
+		buffer_visible = {
+			-- gui = "",
+			fg = { attribute = "fg", highlight = "Normal" },
+			bg = { attribute = "bg", highlight = "Normal" },
+		},
+		buffer_selected = {
+			-- gui = "",
+			fg = { attribute = "fg", highlight = "Normal" },
+			bg = { attribute = "bg", highlight = "Normal" },
+		},
+		close_button = {
+			fg = { attribute = "fg", highlight = "Normal" },
+			bg = { attribute = "bg", highlight = "StatusLine" },
+		},
+		close_button_selected = {
+			fg = { attribute = "fg", highlight = "normal" },
+			bg = { attribute = "bg", highlight = "normal" },
+		},
+		close_button_visible = {
+			fg = { attribute = "fg", highlight = "normal" },
+			bg = { attribute = "bg", highlight = "normal" },
+		},
+		numbers = {
+			fg = { attribute = "fg", highlight = "Normal" },
+			bg = { attribute = "bg", highlight = "StatusLine" },
+		},
+	},
 }

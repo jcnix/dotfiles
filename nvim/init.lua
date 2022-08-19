@@ -1,8 +1,8 @@
+require "user.options"
 -- vim.cmd[[colorscheme tokyonight]]
 vim.cmd "set guifont=JetBrainsMono\\ Nerd\\ Font:h13"
 
 require "user.colorscheme"
-require "user.options"
 require "user.keymaps"
 require "user.plugins"
 require "user.cmp"
