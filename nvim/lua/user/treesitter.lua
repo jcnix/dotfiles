@@ -12,6 +12,9 @@ configs.setup {
 		disable = { "" },
 		additional_vim_regex_highlighting = true,
 	},
+	autotag = {
+		enable = true
+	},
 	indent = { enable = true, disable = { "yaml" } },
 	rainbow = {
 		enable = true,

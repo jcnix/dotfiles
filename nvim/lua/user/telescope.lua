@@ -13,12 +13,15 @@ end
 telescope.setup {
 	defaults = {
 
-		-- prompt_prefix = " ",
-		-- selection_caret = " ",
+		-- layout_strategy = 'vertical',
+		wrap_results = true,
+		prompt_prefix = " ",
+		selection_caret = " ",
 		path_display = { "smart" },
 
 		mappings = {
 			i = {
+				["<C-h>"] = actions.which_key,
 				["<C-n>"] = actions.cycle_history_next,
 				["<C-p>"] = actions.cycle_history_prev,
 
@@ -47,7 +50,6 @@ telescope.setup {
 				["<C-q>"] = actions.send_to_qflist + actions.open_qflist,
 				["<M-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
 				["<C-l>"] = actions.complete_tag,
-				["<C-_>"] = actions.which_key, -- keys from pressing <C-/>
 			},
 
 			n = {
