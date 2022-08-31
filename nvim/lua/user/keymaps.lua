@@ -29,9 +29,6 @@ keymap("n", "<F2>", ":NvimTreeToggle<CR>", opts)
 -- Telescope
 keymap("n", "<C-p>", "<cmd>Telescope commands<cr>", opts)
 
--- Gitsigns
-keymap("v", "<leader>hy", "<cmd> lua require'gitlinker'.get_buf_range_url(v)<cr>", opts)
-
 -- Copy and Paste Clipboard
 keymap('', '<D-v>', '+p<CR>', opts)
 keymap('n', '<leader>P', '"+p', opts)

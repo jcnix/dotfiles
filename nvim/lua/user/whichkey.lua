@@ -32,6 +32,9 @@ whichkey.register({
 			l = { function() require 'telescope.builtin'.git_bcommits() end, "File History" },
 			c = { function() require 'telescope.builtin'.git_branches() end, "Branches" },
 			y = { function() require 'gitlinker'.get_buf_range_url('n') end, "Get URL" },
+			Y = { function() require 'gitlinker'.get_buf_range_url('n',
+					{ action_callback = require 'gitlinker.actions'.open_in_browser })
+			end, "Get URL" },
 			S = { "Stage buffer" },
 			R = { "Reset buffer" },
 			u = { "Undo stage hunk" },
@@ -73,4 +76,19 @@ whichkey.register({
 			f = { "<cmd>HopChar1<cr>", "Find Char" },
 		},
 	}
+}, {
+	mode = 'n'
+})
+
+whichkey.register({
+	["<leader>"] = {
+		h = {
+			y = { function() require 'gitlinker'.get_buf_range_url('v') end, "Get URL" },
+			Y = { function() require 'gitlinker'.get_buf_range_url('v',
+					{ action_callback = require 'gitlinker.actions'.open_in_browser })
+			end, "Get URL" },
+		}
+	}
+}, {
+	mode = 'v'
 })
