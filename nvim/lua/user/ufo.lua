@@ -6,7 +6,7 @@ end
 vim.o.foldlevelstart = 99
 
 ufo.setup {
-	enable_fold_end_virt_text = true,
+	enable_get_fold_virt_text = true,
 	provider_selector = function()
 		return { 'treesitter', 'indent' }
 	end,
