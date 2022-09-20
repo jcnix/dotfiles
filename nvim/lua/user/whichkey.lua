@@ -75,6 +75,7 @@ whichkey.register({
 			k = { "<cmd>HopLineBC<cr>", "Line Up" },
 			f = { "<cmd>HopChar1<cr>", "Find Char" },
 		},
+		P = { '"+p', "Paste from clipboard" },
 	}
 }, {
 	mode = 'n'
@@ -87,7 +88,9 @@ whichkey.register({
 			Y = { function() require 'gitlinker'.get_buf_range_url('v',
 					{ action_callback = require 'gitlinker.actions'.open_in_browser })
 			end, "Get URL" },
-		}
+		},
+		y = { '"*y', "Copy to clipboard" },
+		Y = { '"+y', "Copy to clipboard" },
 	}
 }, {
 	mode = 'v'

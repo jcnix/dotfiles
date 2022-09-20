@@ -31,12 +31,12 @@ keymap("n", "<C-p>", "<cmd>Telescope commands<cr>", opts)
 
 -- Copy and Paste Clipboard
 keymap('', '<D-v>', '+p<CR>', opts)
-keymap('n', '<leader>P', '"+p', opts)
+-- keymap('n', '<leader>P', '"+p', opts)
 keymap('!', '<D-v>', '<C-R>+', opts)
 keymap('t', '<D-v>', '<C-R>+', opts)
 keymap('v', '<D-v>', '<C-R>+', opts)
 keymap('v', '<D-c>', '"+y', opts)
-keymap('v', '<leader>Y', '"+y', opts)
+-- keymap('v', '<leader>Y', '"+y', opts)
 
 keymap('n', '<s-l>', ':BufferLineCycleNext<CR>', opts)
 keymap('n', '<s-h>', ':BufferLineCyclePrev<CR>', opts)
