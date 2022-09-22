@@ -11,9 +11,15 @@ end
 test.setup {
 	adapters = {
 		jest {
-			jestCommand = "npm test --",
-			-- jestConfigFile = "jest.config.unit.js",
+			jestCommand = "./node_modules/.bin/jest",
+			-- jestConfigFile = "jest.config.js",
 		}
+	},
+	icons = {
+		passed = "✔",
+		running = "🗘",
+		failed = "✖",
+		skipped = "ﰸ",
+		unknown = "?",
 	}
 }
-
