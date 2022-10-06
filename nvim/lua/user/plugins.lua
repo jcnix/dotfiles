@@ -114,6 +114,7 @@ return packer.startup(function(use)
 	    "neovim/nvim-lspconfig",
 	}
 	use "RRethy/vim-illuminate"
+	use "jose-elias-alvarez/null-ls.nvim"
 
 	use "kyazdani42/nvim-web-devicons"
 	use "kyazdani42/nvim-tree.lua"
