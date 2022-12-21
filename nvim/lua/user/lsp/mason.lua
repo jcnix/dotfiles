@@ -3,8 +3,8 @@ if not status_ok then
 	return
 end
 
-local status_ok, masonlsp = pcall(require, "mason-lspconfig")
-if not status_ok then
+local lsp_status_ok, masonlsp = pcall(require, "mason-lspconfig")
+if not lsp_status_ok then
 	return
 end
 
@@ -21,9 +21,22 @@ local opts = {
 
 local lspconfig = require('lspconfig')
 
-lspconfig.tsserver.setup(opts)
+lspconfig.tsserver.setup({
+	capabilities = opts.capabilities,
+	on_attach = function (client, bufnr)
+		opts.on_attach(client, bufnr)
+		client.server_capabilities.documentFormattingProvider = false
+		client.server_capabilities.documentRangeFormattingProvider = false
+	end
+})
 
--- lspconfig.eslint.setup(opts)
+lspconfig.eslint.setup({
+	capabilities = opts.capabilities,
+	on_attach = function (client, bufnr)
+		opts.on_attach(client, bufnr)
+		client.server_capabilities.documentFormattingProvider = true
+	end
+})
 
 local sumneko_opts = require("user.lsp.settings.sumneko_lua")
 lspconfig.sumneko_lua.setup(vim.tbl_deep_extend("force", sumneko_opts, opts))

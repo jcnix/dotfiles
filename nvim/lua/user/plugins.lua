@@ -127,10 +127,9 @@ return packer.startup(function(use)
 	use "p00f/nvim-ts-rainbow"
 
 	--colorschemes
-	use "ellisonleao/gruvbox.nvim"
-	use "Mofiqul/vscode.nvim"
-	use "rafamadriz/neon"
-	use "folke/tokyonight.nvim"
+	use "olimorris/onedarkpro.nvim"
+	use "rmehri01/onenord.nvim"
+	use "glepnir/zephyr-nvim"
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
