@@ -43,7 +43,6 @@ return packer.startup(function(use)
 	use "nvim-telescope/telescope.nvim"
 
 	-- Vimscript
-	use "editorconfig/editorconfig-vim"
 	use "airblade/vim-rooter"
 	use "tpope/vim-eunuch"
 
@@ -60,6 +59,7 @@ return packer.startup(function(use)
 	use "famiu/bufdelete.nvim"
 	use "TimUntersberger/neogit"
 	use "lukas-reineke/indent-blankline.nvim"
+	use "gpanders/editorconfig.nvim"
 	use {
 		"numToStr/Comment.nvim",
 		config = function ()
