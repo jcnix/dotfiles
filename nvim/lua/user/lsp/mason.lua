@@ -39,7 +39,7 @@ lspconfig.eslint.setup({
 })
 
 local sumneko_opts = require("user.lsp.settings.sumneko_lua")
-lspconfig.sumneko_lua.setup(vim.tbl_deep_extend("force", sumneko_opts, opts))
+lspconfig.lua_ls.setup(vim.tbl_deep_extend("force", sumneko_opts, opts))
 
 local jsonls_opts = require("user.lsp.settings.jsonls")
 local yamlls_opts = require("user.lsp.settings.yamlls")
