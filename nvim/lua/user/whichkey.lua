@@ -17,6 +17,7 @@ whichkey.register({
 		e = { "<cmd>NvimTreeToggle<CR>", "NvimTree" },
 		f = {
 			name = "telesceope",
+			c = { function() require 'telescope.builtin'.find_files(require('telescope.themes').get_ivy()) end, "Ivy" },
 			f = { function() require 'telescope.builtin'.find_files() end, "Find Files" },
 			g = { function() require 'telescope.builtin'.live_grep() end, "Grep" },
 			b = { function() require 'telescope.builtin'.current_buffer_fuzzy_find() end, "Find In Buffer" },
