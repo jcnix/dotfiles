@@ -91,6 +91,12 @@ return packer.startup(function(use)
 			"kevinhwang91/promise-async"
 		}
 	}
+	use {
+		"ellisonleao/glow.nvim",
+		config = function()
+			require("glow").setup()
+		end
+	}
 
 	--lualine
 	use "nvim-lualine/lualine.nvim"
