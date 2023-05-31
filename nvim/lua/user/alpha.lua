@@ -3,6 +3,6 @@ if not status_ok then
 	return
 end
 
-local theme = require('alpha.themes.theta').config
+local theme = require('alpha.themes.dashboard').config
 
 alpha.setup(theme)

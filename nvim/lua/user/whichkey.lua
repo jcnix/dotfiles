@@ -24,6 +24,7 @@ whichkey.register({
 			h = { function() require 'telescope.builtin'.command_history() end, "Command History" },
 			m = { function() require 'telescope.builtin'.keymaps() end, "Keymaps" },
 			p = { function() require 'telescope.builtin'.commands() end, "Commands" },
+			r = { function() require 'telescope.builtin'.oldfiles() end, "Old Files" },
 			w = { function() require 'telescope.builtin'.grep_string() end, "Find Word Under Cursor" },
 		},
 		h = {
