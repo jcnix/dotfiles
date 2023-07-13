@@ -57,7 +57,7 @@ return packer.startup(function(use)
 	use "NvChad/nvim-colorizer.lua"
 	use "ruifm/gitlinker.nvim"
 	use "famiu/bufdelete.nvim"
-	use "TimUntersberger/neogit"
+	use "NeogitOrg/neogit"
 	use "lukas-reineke/indent-blankline.nvim"
 	use "gpanders/editorconfig.nvim"
 	use {
