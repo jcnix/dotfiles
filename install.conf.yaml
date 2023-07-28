@@ -16,7 +16,9 @@
     ~/.vim/coc-settings.json: vim/coc-settings.json
     ~/.vim/after/ftplugin/netrw.vim: vim/netrw.vim
     ~/.vimrc: vimrc
-    ~/.zshrc: zshrc
+    ~/.zshrc:
+      force: true
+      path: zshrc
     ~/.work.zsh: work.zsh
     ~/.p10k.zsh: p10k.zsh
 

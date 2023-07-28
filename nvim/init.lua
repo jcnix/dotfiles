@@ -1,7 +1,7 @@
 if vim.g.vscode then
 
 	vim.opt.clipboard = 'unnamedplus'
-	require "vscode.nvim-ui"
+	-- require "vscode.nvim-ui"
 
 else
 	local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"

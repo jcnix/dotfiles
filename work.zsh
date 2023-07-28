@@ -1,4 +1,4 @@
-export LIMA_INSTANCE=fedora
+export LIMA_INSTANCE=podman
 alias docker=nerdctl.lima
 
 if [ -f /usr/libexec/java_home ]; then
