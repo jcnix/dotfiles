@@ -1,9 +1,9 @@
-local status_ok, packer = pcall(require, "lazy")
+local status_ok, lazy = pcall(require, "lazy")
 if not status_ok then
 	return
 end
 
-require("lazy").setup({
+lazy.setup({
 	"nvim-lua/popup.nvim",
 	"nvim-lua/plenary.nvim",
 
@@ -49,8 +49,8 @@ require("lazy").setup({
 	{
 		"nvim-neotest/neotest",
 		dependencies = {
-			{ "haydenmeade/neotest-jest"}, 
-			{"antoinemadec/FixCursorHold.nvim"}
+			{ "haydenmeade/neotest-jest" },
+			{ "antoinemadec/FixCursorHold.nvim" }
 		}
 	},
 	{
@@ -80,9 +80,13 @@ require("lazy").setup({
 	"saadparwaiz1/cmp_luasnip",
 
 	--lsp
-	"williamboman/mason.nvim",
-	"williamboman/mason-lspconfig.nvim",
-	"neovim/nvim-lspconfig",
+	{
+		"williamboman/mason-lspconfig.nvim",
+		dependencies = {
+			{ "williamboman/mason.nvim", },
+			{ "neovim/nvim-lspconfig" },
+		}
+	},
 	"RRethy/vim-illuminate",
 
 	"kyazdani42/nvim-web-devicons",
