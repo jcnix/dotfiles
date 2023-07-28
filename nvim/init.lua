@@ -4,7 +4,6 @@ if vim.g.vscode then
 	require "vscode.nvim-ui"
 
 else
-
 	local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 	if not vim.loop.fs_stat(lazypath) then
 		vim.fn.system({
@@ -18,11 +17,10 @@ else
 	end
 	vim.opt.rtp:prepend(lazypath)
 
+	-- require "user.colorscheme"
 	require "user.options"
-	-- vim.cmd[[colorscheme tokyonight]]
 	vim.cmd "set guifont=JetBrainsMono\\ Nerd\\ Font:h13"
 
-	require "user.colorscheme"
 	require "user.keymaps"
 	require "user.plugins"
 	require "user.cmp"

@@ -91,13 +91,25 @@ require("lazy").setup({
 	--treesitter
 	{
 		"nvim-treesitter/nvim-treesitter",
-		run = ":TSUpdate",
+		build = ":TSUpdate",
 	},
 	"p00f/nvim-ts-rainbow",
 
 	--colorschemes
+	{
+		"rmehri01/onenord.nvim",
+		lazy = false,
+		priority = 1000,
+		config = function()
+			require("onenord").setup {
+				fade_nc = true,
+				styles = {
+					diagnostics = "undercurl"
+				},
+			}
+		end
+	},
 	"olimorris/onedarkpro.nvim",
-	"rmehri01/onenord.nvim",
 	"glepnir/zephyr-nvim",
 })
 
