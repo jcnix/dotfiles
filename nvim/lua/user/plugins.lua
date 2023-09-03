@@ -88,9 +88,12 @@ lazy.setup({
 		}
 	},
 	"RRethy/vim-illuminate",
-
-	"kyazdani42/nvim-web-devicons",
-	"kyazdani42/nvim-tree.lua",
+	{
+		"nvim-tree/nvim-tree.lua",
+		dependencies = {
+			{"nvim-tree/nvim-web-devicons", },
+		},
+	},
 
 	--treesitter
 	{
