@@ -1,5 +1,6 @@
 export LIMA_INSTANCE=podman
-alias docker=nerdctl.lima
+alias docker=podman
+export DOCKER_HOST=unix:///Users/cj85430/.lima/podman/sock/podman.sock               ─╯
 
 if [ -f /usr/libexec/java_home ]; then
 	export JAVA_HOME=`/usr/libexec/java_home`
