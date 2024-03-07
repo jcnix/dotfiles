@@ -1,6 +1,6 @@
-export LIMA_INSTANCE=podman
+export LIMA_INSTANCE=podman-vz
 alias docker=podman
-export DOCKER_HOST=unix:///Users/cj85430/.lima/podman/sock/podman.sock               ─╯
+export DOCKER_HOST=unix:///Users/cj85430/.lima/podman-vz/sock/podman.sock               ─╯
 
 if [ -f /usr/libexec/java_home ]; then
 	export JAVA_HOME=`/usr/libexec/java_home`
