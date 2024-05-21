@@ -21,6 +21,7 @@
       path: zshrc
     ~/.work.zsh: work.zsh
     ~/.p10k.zsh: p10k.zsh
+    ~/.alacritty.toml: alacritty.toml
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
