@@ -1,8 +1,8 @@
 - defaults:
     link:
       relink: true
-    
-- clean: ['~']
+
+- clean: ["~"]
 
 - create:
     - ~/.config
@@ -10,7 +10,7 @@
     - ~/.vim/after/ftplugin
 
 - link:
-    ~/.dotfiles: ''
+    ~/.dotfiles: ""
     ~/.config/nvim: nvim
     ~/.vim/autoload/plug.vim: vim/autoload/plug.vim
     ~/.vim/coc-settings.json: vim/coc-settings.json
@@ -22,7 +22,7 @@
     ~/.work.zsh: work.zsh
     ~/.p10k.zsh: p10k.zsh
     ~/.alacritty.toml: alacritty.toml
+    ~/.config/fish/config.fish: fish/config.fish
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-
