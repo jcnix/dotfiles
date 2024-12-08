@@ -17,6 +17,7 @@
     ~/.p10k.zsh: p10k.zsh
     ~/.alacritty.toml: alacritty.toml
     ~/.config/fish/config.fish: fish/config.fish
+    ~/.tmux.conf: tmux.conf
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
