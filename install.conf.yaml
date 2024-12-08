@@ -16,7 +16,7 @@
     ~/.work.zsh: work.zsh
     ~/.p10k.zsh: p10k.zsh
     ~/.alacritty.toml: alacritty.toml
-    ~/.config/fish/config.fish: fish/config.fish
+    ~/.config/fish: fish
     ~/.tmux.conf: tmux.conf
 
 - shell:
