@@ -1,6 +1,19 @@
 return {
   "saghen/blink.cmp",
   opts = {
+    completion = {
+      menu = {
+        border = "rounded",
+      },
+      documentation = {
+        window = {
+          border = "rounded",
+        },
+      },
+      ghost_text = {
+        enabled = true,
+      },
+    },
     keymap = {
       preset = "super-tab",
       ["<Tab>"] = { "select_and_accept" },
