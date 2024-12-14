@@ -8,13 +8,13 @@ return {
     end,
     on_highlights = function(highlights, colors)
       highlights.BlinkCmpMenuBorder = {
-        fg = "orange",
+        fg = colors.border,
       }
       highlights.BlinkCmpGhostText = {
         fg = "white",
       }
       highlights.BlinkCmpDocBorder = {
-        fg = "orange",
+        fg = colors.border,
       }
     end,
   },
