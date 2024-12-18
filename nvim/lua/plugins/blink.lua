@@ -18,9 +18,10 @@ return {
       },
     },
     keymap = {
-      preset = "super-tab",
-      ["<C-j>"] = { "select_next" },
-      ["<C-k>"] = { "select_prev" },
+      preset = "enter",
+      ["<Tab>"] = { "select_and_accept", "fallback" },
+      ["<C-j>"] = { "select_next", "fallback" },
+      ["<C-k>"] = { "select_prev", "fallback" },
     },
   },
 }
