@@ -79,10 +79,10 @@ if (( ${+terminfo[smkx]} && ${+terminfo[rmkx]} )); then
 fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-if [ -z $SSH_CLIENT ] && [ $TERM != "linux" ]; then
+# if [ -z $SSH_CLIENT ] && [ $TERM != "linux" ]; then
 	# source ~/.dotfiles/powerlevel10k/powerlevel10k.zsh-theme
 	[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-fi
+# fi
 
 if [ -f ~/.fzf.zsh ]; then
 	source ~/.fzf.zsh
