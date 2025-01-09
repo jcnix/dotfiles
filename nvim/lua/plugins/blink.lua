@@ -3,7 +3,9 @@ return {
   opts = {
     completion = {
       list = {
-        selection = "manual",
+        selection = {
+          preselect = false,
+        },
       },
       menu = {
         border = "rounded",
@@ -12,9 +14,6 @@ return {
         window = {
           border = "rounded",
         },
-      },
-      ghost_text = {
-        enabled = true,
       },
     },
     keymap = {
