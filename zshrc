@@ -84,11 +84,8 @@ fi
 	[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 # fi
 
-if [ -f ~/.fzf.zsh ]; then
-	source ~/.fzf.zsh
-else
-	source /usr/share/fzf/shell/key-bindings.zsh
-	source /usr/share/zsh/site-functions/fzf
+if type fzf &> /dev/null; then
+  source <(fzf --zsh)
 fi
 
 if [ -f ~/.work.zsh ]; then
