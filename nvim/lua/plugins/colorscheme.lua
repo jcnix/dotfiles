@@ -2,7 +2,7 @@ return {
   "folke/tokyonight.nvim",
   lazy = false,
   opts = {
-    style = "moon",
+    style = "night",
     on_colors = function(colors)
       colors.border = "orange"
     end,
@@ -20,6 +20,9 @@ return {
       }
       highlights.FloatBorder = {
         fg = floatBorderFg,
+      }
+      highlights.DiffChange = {
+        bg = "#2f3a1f",
       }
     end,
   },
