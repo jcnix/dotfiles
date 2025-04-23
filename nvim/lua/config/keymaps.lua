@@ -9,3 +9,7 @@ vim.keymap.set(
   "<cmd>Trouble lsp_references toggle auto_refresh=false win.position=bottom<CR>",
   { desc = "References (Trouble)" }
 )
+
+vim.keymap.set("n", "<leader>gC", function()
+  Snacks.picker.git_branches()
+end, { desc = "Git Branches" })
