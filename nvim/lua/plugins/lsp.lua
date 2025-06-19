@@ -4,7 +4,21 @@ return {
     diagnostics = {
       virtual_text = false,
     },
-    servers = { eslint = {} },
+    servers = {
+      eslint = {},
+      yamlls = {
+        settings = {
+          yaml = {
+            customTags = {
+              "!Ref",
+              "!GetAtt",
+              "!Join",
+              "!Sub",
+            },
+          },
+        },
+      },
+    },
     setup = {
       eslint = function()
         require("lazyvim.util").lsp.on_attach(function(client)
