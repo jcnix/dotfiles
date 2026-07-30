@@ -22,7 +22,7 @@ return {
         fg = floatBorderFg,
       }
       highlights.DiffChange = {
-        bg = "#2f3a1f",
+        bg = nil,
       }
     end,
   },
